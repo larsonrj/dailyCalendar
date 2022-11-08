@@ -2,7 +2,8 @@ var todayEl = $("#currentDay");
 var hourEl = $(".time-block");
 var date = dayjs().format("dddd, MMMM Do");
 var currentHour = dayjs().format("H");
-console.log(currentHour);
+var buttonEl = $(".btn");
+console.log(buttonEl.eq(0).parent().get(0).id);
 
 $(function () {
   // Added the current date to the header of the calendar
@@ -19,6 +20,12 @@ $(function () {
       hourEl.eq(i).addClass("future");
     }
   });
+
+  buttonEl.click(function () {
+    clickedId = $(this).parent().get(0).id;
+    // savedText =
+  });
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -29,6 +36,4 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
 });
