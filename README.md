@@ -14,7 +14,7 @@ Write javascript code using jquery to update a daily calendar to display hours o
 
 ## Website Link
 
-Link to deployed website is [Work Day Calendar]()
+Link to deployed website is [Work Day Calendar](https://larsonrj.github.io/dailyCalendar/)
 
 ## Website Preview
 
